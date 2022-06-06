@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+//class is only for get properties and set properties without any functions is pojo class
+public class student {
+    public String name;
+    public int age;
+    char gender;
+    student(){
+
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the name");
+        student s=new student();
+        s.setName(input.next());
+        System.out.println(s.getName());
+    }
+}
